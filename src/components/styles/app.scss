@@ -1,0 +1,60 @@
+$color1:rgb(10, 86, 158);
+$border1:2px solid black;
+$size:4px;
+
+.box{
+    min-height: 110vh;
+    width: auto;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >h1{
+        font-size: 2rem;
+        font-weight: bold;        
+        padding-top: 2rem;
+    }
+
+    >.formContainer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;        
+        min-height: 80vh;
+                
+        >label{
+            padding-top: 1rem;
+            font-weight: 500;
+        }
+        >input{
+            border:1px solid gray;
+            border-radius: $size;
+            padding: $size;
+        }
+        >button{
+            margin-top: $size;
+            padding: $size;
+            border-radius:$size;
+            color: white;
+            background-color: $color1;
+            width: 100%;
+            &:hover{background-color: black;}
+            }
+        >span {
+            padding-top: 12px;
+            .mybtn {
+                
+                background-color: beige;              
+                color: black;
+                border-radius: 2px;
+                width: 20%;
+                &:hover{
+                    background-color: black;
+                    color:white;
+                }
+            }
+        }
+    }
+    
+
+
+}
